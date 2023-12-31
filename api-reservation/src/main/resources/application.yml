@@ -1,0 +1,9 @@
+server:
+  port: 3070
+  servlet:
+    context-path: /api/flights/reservation
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, info
