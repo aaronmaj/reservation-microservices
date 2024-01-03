@@ -7,5 +7,5 @@ import org.springframework.boot.runApplication
 class ApiReservationApplication
 
 fun main(args: Array<String>) {
-	runApplication<ApiReservationApplication>(*args)
+    runApplication<ApiReservationApplication>(*args)
 }

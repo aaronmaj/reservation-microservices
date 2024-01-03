@@ -5,8 +5,15 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.twa.flights</groupId>
-    <artifactId>reservation-microservices</artifactId>
     <description>Fast Microservices with Kotlin</description>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <properties>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
+    </properties>
+
 
     <modules>
         <module>api-reservation</module>

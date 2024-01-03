@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+  api-reservation-db:
+    container_name: api-reservation-db
+    image: mysql:8.2-oracle
+    restart: always
+    environment:
+      MYSQL_DATABASE: 'flights_reservation'
+      MYSQL_ROOT_PASSWORD: 'PASSWORD'
+      MYSQL_ROOT_HOST: "%"
+    ports:
+      - 5079:3306
+networks:
+  net: { }

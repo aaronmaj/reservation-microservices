@@ -7,3 +7,30 @@ management:
     web:
       exposure:
         include: health, info
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: "jdbc:mysql://localhost:5079/flights_reservation?autoReconnect=true"
+    username: root
+    password: PASSWORD
+    validation-query: select 1;
+    maxActive: 100
+  jpa:
+    database: mysql
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: validate
+        show_sql: false
+        ejb.naming_strategy: org.hibernate.cfg.ImprovedNamingStrategy
+        id.db_structure_naming_strategy: legacy # since Hibernate 6 https://thorben-janssen.com/sequence-naming-strategies-in-hibernate-6/
+    generate-ddl: false
+    show-sql: false
+    database-platform: org.hibernate.dialect.MySQLDialect
+
+  flyway:
+    locations: classpath:db/migrations
+    sql-migration-prefix: V
+    repeatable-sql-migration-prefix: R
+    sql-migration-separator: __
+    sql-migration-suffixes: .sql
