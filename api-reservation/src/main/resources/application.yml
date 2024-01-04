@@ -34,3 +34,34 @@ spring:
     repeatable-sql-migration-prefix: R
     sql-migration-separator: __
     sql-migration-suffixes: .sql
+
+http-connector:
+  defaultConfig: &commonDefaultConfig
+    connectionTimeout: 5000
+    readTimeout: 5000
+    responseTimeout: 5000
+
+  hosts:
+    api-catalog:
+      host: "localhost"
+      port: 6070
+      defaultConfig: &hostDefaultConfig
+        <<: *commonDefaultConfig
+        responseTimeout: 2000
+      endpoints:
+        country-by-id:
+          <<: *hostDefaultConfig
+          path: "/api/flights/catalog/country/{nationality}"
+          connectionTimeout: 4000
+
+    api-clusters:
+      host: "localhost"
+      port: 4070
+      defaultConfig: &hostDefaultConfig
+        <<: *commonDefaultConfig
+        responseTimeout: 2000
+      endpoints:
+        clusters-by-id:
+          <<: *hostDefaultConfig
+          path: "/api/flights/clusters/itineraries/{id}/itinerary/{itineraryId}"
+          connectionTimeout: 4000

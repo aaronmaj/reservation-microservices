@@ -1,4 +1,4 @@
-package com.twa.flights.api.reservation.configuration
+package com.twa.flights.api.reservation.config
 
 import org.springframework.boot.actuate.info.InfoContributor
 import org.springframework.boot.actuate.info.InfoEndpoint
