@@ -1,6 +1,6 @@
 package com.twa.flights.api.reservation.dto
 
-import com.twa.flights.api.reservation.dto.enums.DocumentType
+import com.twa.flights.api.reservation.enums.DocumentType
 import jakarta.validation.constraints.Future
 import jakarta.validation.constraints.NotBlank
 import jakarta.validation.constraints.NotNull

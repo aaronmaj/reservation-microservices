@@ -22,7 +22,7 @@ fun Passenger.toDto() = PassengerDto(
     lastName = lastName
 )
 
-fun Reservation.toDto() = ReservationDto(id, itineraryId, passengers?.map { it.toDto() }, contact?.toDto())
+fun Reservation.toDto() = ReservationDto(id, itineraryId, "", passengers?.map { it.toDto() }, contact?.toDto())
 
 fun DocumentDto.toModel() = Document(id, number, type, expiration)
 fun ContactDto.toModel() = Contact(id, telephone, email)

@@ -1,6 +1,6 @@
 package com.twa.flights.api.reservation.model
 
-import com.twa.flights.api.reservation.dto.enums.DocumentType
+import com.twa.flights.api.reservation.enums.DocumentType
 import jakarta.persistence.*
 import org.hibernate.annotations.JdbcTypeCode
 import org.hibernate.type.SqlTypes

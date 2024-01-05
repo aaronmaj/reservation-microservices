@@ -1,4 +1,4 @@
-package com.twa.flights.api.reservation.connector
+package com.twa.flights.api.reservation.connector.configuration
 
 import org.springframework.boot.context.properties.ConfigurationProperties
 import org.springframework.boot.context.properties.EnableConfigurationProperties

@@ -1,4 +1,4 @@
-package com.twa.flights.api.reservation.dto.enums
+package com.twa.flights.api.reservation.enums
 
 import org.springframework.http.HttpStatus
 

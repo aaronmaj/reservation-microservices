@@ -1,7 +1,7 @@
 package com.twa.flights.api.reservation.dto
 
-import com.twa.flights.api.reservation.dto.enums.Gender
-import com.twa.flights.api.reservation.dto.enums.PassengerType
+import com.twa.flights.api.reservation.enums.Gender
+import com.twa.flights.api.reservation.enums.PassengerType
 import jakarta.validation.Valid
 import jakarta.validation.constraints.NotBlank
 import jakarta.validation.constraints.NotNull

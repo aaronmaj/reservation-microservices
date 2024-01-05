@@ -1,4 +1,4 @@
-package com.twa.flights.api.reservation.connector
+package com.twa.flights.api.reservation.connector.configuration
 
 interface ConnectionConfiguration {
     val connectionTimeout: Long
